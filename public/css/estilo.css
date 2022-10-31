@@ -72,3 +72,15 @@ nav ul li a span{
 nav ul li a span:hover{
     transform: translateY(-50%) rotate(-180deg);
 }
+
+ .dropdown-content {
+    display: none;
+} 
+
+.dropdown-content li a {
+    display: block;
+}
+
+.show {
+    display:block;
+}
