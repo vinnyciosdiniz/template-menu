@@ -83,4 +83,5 @@ nav ul li a span:hover{
 
 .show {
     display:block;
+    transition: 3s; 
 }
