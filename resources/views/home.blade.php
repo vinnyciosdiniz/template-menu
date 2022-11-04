@@ -1,10 +1,10 @@
 @extends('layout')
 @section('menu')
-    {{-- <div class="topo">
+    <div class="topo">
         <div class="menubtn">
             <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
-    </div> --}}
+    </div>
 
     <nav class="sidebar">
         <div class="text">Menu</div>
