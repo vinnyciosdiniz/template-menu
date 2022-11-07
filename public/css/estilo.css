@@ -15,6 +15,23 @@
     background: #4c4c50;
 }
 
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    padding: 20px 30px;
+    width: 250px;
+    border-radius: 5%;
+    background: #cbcbda;
+    display: none;
+}
+
 .sidebar .text{
     color: #fff;
     font-size: 25px;
@@ -84,4 +101,15 @@ nav ul li a span:hover{
 .show {
     display:block;
     transition: 3s; 
+}
+
+/* mostrar e nao mostrar */
+.display {
+    opacity: 1;
+    visibility: visible;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
 }
