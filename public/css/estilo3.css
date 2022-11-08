@@ -1,0 +1,122 @@
+/* classes de uso geral */
+.wid-50{width: 50px !important;}
+.wid-75{width: 75px !important;}
+.wid-100{width: 100px !important;}
+
+/* FIM classes de uso geral */
+
+/* paginaÃ§Ã£o das paginas com jpages*/
+.holder {
+    margin:15px 0;
+}
+.holder a {
+    font-size:12px;
+    cursor:pointer;
+/*    margin:0 5px;*/
+    color:#333;
+    
+    padding: 9px 15px;
+    margin-left: -1px;
+    line-height: 1.57142857;
+    color: #76838f;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #e4eaec;
+}
+.holder a:hover {
+    background-color:#e4eaec;
+    color:#62a8ea;
+}
+.holder a.jp-previous {
+    margin-right:10px;
+}
+.holder a.jp-next {
+    margin-left:10px;
+}
+.holder a.jp-current,a.jp-current:hover {
+    /*color:#FF4242;*/
+    font-weight:bold;
+    
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #62a8ea;
+    border-color: #62a8ea;
+}
+.holder a.jp-disabled,a.jp-disabled:hover {
+    color:#bbb;
+}
+.holder a.jp-disabled,a.jp-disabled:hover {
+    cursor:default;
+    background:none;
+}
+.holder span {
+    margin: 0 5px;
+}
+/* FIM paginaÃ§Ã£o das paginas com jpages*/
+
+
+/* controles especÃ­ficos */
+
+#exibirMsg{
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    z-index: 9999;
+    width: 700px;
+}
+
+.jpanelScroll{
+    /* melhorar aparencia do scroll depois */
+    overflow-y: auto;
+    height: 90%;
+}
+
+.modalLoading{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    opacity: 0.95;
+    z-index: 9999;
+}
+
+.msgValidate .form-control-feedback{
+    right: 5px !important;
+}
+
+.modal .select2-container {
+    width: 100% !important;
+}
+
+/* controles especÃ­ficos */
+
+.form-horizontal .has-feedback select.form-control + .form-control-feedback {
+    top: 0;
+    right: 25px;
+}
+
+textarea{
+    resize: none;
+}
+
+#exibirOcorrencia i.form-control-feedback, #formPerfil i.form-control-feedback {
+    right: 10px;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    z-index: 9999;
+}
