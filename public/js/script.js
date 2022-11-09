@@ -1,20 +1,25 @@
-function introUm() {
-    var x = document.getElementById("form 11");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+const selected = document.querySelector(".selected");
+const optionsContainer = document.querySelector(".options-container");
 
-function introDois() {
-    var x = document.getElementById("form 12");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+const optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", () => {
+  optionsContainer.classList.toggle("active");
+});
+
+optionsList.forEach(o => {
+  o.addEventListener("click", () => {
+    selected.innerHTML = o.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});
+
+
+
+
+
+
+
 
 function opc1() {
     document.getElementById("myDropdown1").classList.toggle("show");
@@ -37,8 +42,7 @@ function intro1() {
     formContainer.classList.add("visible");
 }
 
-
-//Fecha o dropdown se clicar fora
+// Close the dropdown menu if the user clicks outside of it  
 // window.onclick = function (event) {
 //     if (!event.target.matches('.dropbtn')) {
 //         var dropdowns = document.getElementsByClassName("dropdown-content");

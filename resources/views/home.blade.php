@@ -1,10 +1,10 @@
 @extends('layout')
 @section('menu')
-    <div class="topo">
+    {{-- <div class="topo">
         <div class="menubtn">
             <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
-    </div>
+    </div> --}}
 
     <nav class="sidebar">
         <div class="text">Me</div>
@@ -55,34 +55,36 @@
             </div>
         </ul>
     </nav>
-    {{-- Formulário item 1.1 --}}
-    <div class="container" id="form 11">
-        <div class="outer">
-            <form id="form">
-                <div id="page">
-                    <label>Form</label>
-                    <div class="element">
-                        Texto
-                        <input type="text" placeholder="Texto">
-                    </div>
+
+    {{-- Iniciando from dropdown --}}
+
+    <div class="container">
+        <h2>Categoria</h2>
+
+        <div class="select-box">
+            <div class="options-container acive">
+                <div class="option">
+                    <input type="radio" class="radio" id="automobiles" name="category">
+                    <label for="automobiles">Automobiles</label>
                 </div>
-            </form>
-        </div>
-    </div>
-    {{-- Formulário item 1.2 --}}
-    <div class="container" id="form 12">
-        <div class="outer">
-            <form id="form">
-                <div id="page">
-                    <label>segunda opc</label>
-                    <div class="element">
-                        dois
-                        <input type="text" placeholder="Texto">
-                    </div>
+
+                <div class="option">
+                    <input type="radio" class="radio" id="science" name="category">
+                    <label for="science">Science</label>
                 </div>
-            </form>
+
+            </div>
         </div>
+        <div class="selected">
+            Select video category
+            <a><i class="fa-solid fa-arrow-down-to-line"></i></a>
+        </div>
+        
     </div>
+    
+    {{-- Fim --}}
+        
+
 
     <script></script>
 @endsection

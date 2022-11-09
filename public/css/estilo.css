@@ -31,13 +31,91 @@ body{
     position: relative;
     align-items: center;
     padding: 20px 30px;
-    width: 250px;
+    width: 400px;
     border-radius: 5%;
-    background: #cbcbda;
+    background: #9c9caa;
+    /* display: none; */
+}
+
+.selected-box {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+.select-box .options-container {
+    background: #2f3640;
+    width: 100%;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0; 
+    order: 1;
+}
+
+.selected {
+    background:rgba(126, 128, 230, 0.699);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #f5f6fa;
+    position: relative;
+    order: 0;
+}
+
+.selected::after {
+    content: "";
+    background: #f5f6fa;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.select-box .options-container.active + .selected::after {
+    transform: rotateX('180deg');
+    top: -6px;
+
+}
+
+.select-box .option .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+
+.select-box .options-container.active {
+    max-height: 50px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;;
+}
+
+
+.select-box .option:hover {
+    background: #424b57;
+}
+
+.selected-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
     display: none;
 }
 
-.sidebar .text{
+.sidebar .text {
     color: #fff;
     font-size: 25px;
     font-weight: 600;
@@ -47,19 +125,19 @@ body{
     letter-spacing: 1px;
 }
 
-nav ul{
+nav ul {
     background: #4c4c50;
     height: 100%;
     width: 100%;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     line-height: 60px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 22px;
@@ -70,19 +148,19 @@ nav ul li a{
     font-weight: 300;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: cyan;
     border-left-color: cyan;
     background: #4c4c50;
 }
 
-nav ul ul li a{
+nav ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
     padding-left: 80px;
 }
 
-nav ul li a span{
+nav ul li a span {
     /* position: absolute; */
     /* right: 50px;
     top: 50%; */
@@ -91,7 +169,7 @@ nav ul li a span{
     transition: 0.4s;
 }
 
-nav ul li a span:hover{
+nav ul li a span:hover {
     transform: translateY(-50%) rotate(-180deg);
 }
 
