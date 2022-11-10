@@ -6,6 +6,7 @@
         </div>
     </div> --}}
 
+    {{-- Menu --}}
     <nav class="sidebar">
         <div class="text">Me</div>
         <ul id="ul-principal">
@@ -55,36 +56,35 @@
             </div>
         </ul>
     </nav>
-
-    {{-- Iniciando from dropdown --}}
-
-    <div class="container">
-        <h2>Categoria</h2>
-
-        <div class="select-box">
-            <div class="options-container acive">
-                <div class="option">
-                    <input type="radio" class="radio" id="automobiles" name="category">
-                    <label for="automobiles">Automobiles</label>
-                </div>
-
-                <div class="option">
-                    <input type="radio" class="radio" id="science" name="category">
-                    <label for="science">Science</label>
-                </div>
-
+    {{-- tela principal --}}
+    <div class="screen">
+        {{-- Iniciando Form Dropwdown --}}
+        <form action="#" >
+            <div class="opcao">
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade">
+                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                </select>
             </div>
-        </div>
-        <div class="selected">
-            Select video category
-            <a><i class="fa-solid fa-arrow-down-to-line"></i></a>
-        </div>
-        
+            <div class="opcao">
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade">
+                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                </select>
+            </div>
+            <div class="opcao">
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade">
+                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                </select>
+            </div>
+        </form>
+        <input type="submit" value="Limpar" />
+        <input type="submit" value="Buscar" />
+        {{-- Fim Form Dropwdown --}}
     </div>
     
-    {{-- Fim --}}
         
-
 
     <script></script>
 @endsection
