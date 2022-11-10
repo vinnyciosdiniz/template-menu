@@ -130,6 +130,39 @@ form {
     display: grid;
 }
 
-form input{
+form input {
     display: inline;
+}
+
+.screen {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: left; */
+}
+
+.opcao {
+    padding: 5px;
+}
+
+#field-legenda {
+    width:25vh;
+    height:7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fieldset
+{
+  width:100vh;
+  height:70vh;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }

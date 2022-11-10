@@ -60,24 +60,42 @@
     <div class="screen">
         {{-- Iniciando Form Dropwdown --}}
         <form action="#" >
-            <div class="opcao">
-                <label for="especialidade">Especialidade</label>
-                <select name="especialidade" id="especialidade">
-                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
-                </select>
-            </div>
-            <div class="opcao">
-                <label for="especialidade">Especialidade</label>
-                <select name="especialidade" id="especialidade">
-                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
-                </select>
-            </div>
-            <div class="opcao">
-                <label for="especialidade">Especialidade</label>
-                <select name="especialidade" id="especialidade">
-                <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
-                </select>
-            </div>
+            <fieldset class="fieldset">
+                <legend>
+                    <fieldset id="field-legenda">Formulário de busca</fieldset>
+                    
+                </legend>
+                <div class="opcao">
+                    <label for="especialidade">Especialidade</label>
+                    <select name="especialidade" id="especialidade">
+                    <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                    </select>
+                </div>
+                <div class="opcao">
+                    <label for="nome">Nome do médico</label>
+                    <select name="nome" id="nome">
+                    <option value="Todas as especialidades">TODOS OS MÉDICOS</option>
+                    </select>
+                </div>
+                <div class="opcao">
+                    <label for="unidade">Unidade</label>
+                    <select name="unidade" id="unidade">
+                    <option value="Todas as especialidades">TODAS AS UNIDADES</option>
+                    </select>
+                </div>
+                <div class="opcao">
+                    <label for="andar">Andar</label>
+                    <select name="andar" id="andar">
+                    <option value="Todas as especialidades">TODOS OS ANDARES</option>
+                    </select>
+                </div>
+                <div class="opcao">
+                    <label for="ala">Ala</label>
+                    <select name="ala" id="ala">
+                    <option value="Todas as especialidades">TODAS AS ALAS</option>
+                    </select>
+                </div>
+            </fieldset>
         </form>
         <input type="submit" value="Limpar" />
         <input type="submit" value="Buscar" />
