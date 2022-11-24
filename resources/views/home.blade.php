@@ -95,6 +95,15 @@
                     <option value="Todas as especialidades">TODAS AS ALAS</option>
                     </select>
                 </div>
+                <fieldset class="field-data">
+                    <h2>Período</h2>
+                    <form>
+                        <label for="birthday">Data início:</label>
+                        <input type="date" id="birthday" name="birthday">
+                        <label for="birthday">Data fim:</label>
+                        <input type="date" id="birthday" name="birthday">
+                      </form>
+                </fieldset>
             </fieldset>
         </form>
         <input type="submit" value="Limpar" />
