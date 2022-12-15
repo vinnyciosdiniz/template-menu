@@ -1,6 +1,5 @@
 @extends('layout3')
 @section('menu3')
-
     <header class="site-header push">This is a header</header>
 
     <!-- Pushy Menu -->
@@ -47,13 +46,64 @@
         <!-- Menu Button -->
         <button class="menu-btn">&#9776; Menu</button>
 
-        <p> Tabela Aqui</p>
+        {{-- tela principal --}}
+        <div class="screen">
+            {{-- Iniciando Form Dropwdown --}}
+            <form action="#">
+                <fieldset class="fieldset">
+                    <legend>
+                        <fieldset id="field-legenda">Formulário de busca</fieldset>
 
-    </div>
+                    </legend>
+                    <div class="opcao">
+                        <label for="especialidade">Especialidade</label>
+                        <select name="especialidade" id="especialidade">
+                            <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="nome">Nome do médico</label>
+                        <select name="nome" id="nome">
+                            <option value="Todas as especialidades">TODOS OS MÉDICOS</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="unidade">Unidade</label>
+                        <select name="unidade" id="unidade">
+                            <option value="Todas as especialidades">TODAS AS UNIDADES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="andar">Andar</label>
+                        <select name="andar" id="andar">
+                            <option value="Todas as especialidades">TODOS OS ANDARES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="ala">Ala</label>
+                        <select name="ala" id="ala">
+                            <option value="Todas as especialidades">TODAS AS ALAS</option>
+                        </select>
+                    </div>
+                    <fieldset class="field-data">
+                        <h2>Período</h2>
+                        <form>
+                            <label for="birthday">Data início:</label>
+                            <input type="date" id="birthday" name="birthday">
+                            <label for="birthday">Data fim:</label>
+                            <input type="date" id="birthday" name="birthday">
+                        </form>
+                    </fieldset>
+                </fieldset>
+            </form>
+            <input type="submit" value="Limpar" />
+            <input type="submit" value="Buscar" />
+            {{-- Fim Form Dropwdown --}}
 
-    <footer class="site-footer push">This is a footer</footer>
+        </div>
 
-    <!-- Pushy JS -->
-    <script src="js/pushy.js"></script>
+        <footer class="site-footer push">This is a footer</footer>
 
-@endsection
+        <!-- Pushy JS -->
+        <script src="js/pushy.js"></script>
+    @endsection
