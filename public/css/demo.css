@@ -21,7 +21,7 @@ ul {
     width: 100px;
     padding: 10px;
     margin-bottom: 30px;
-    background: #000;
+    background: #333;
     color: #FFF;
     text-align: center;
     cursor: pointer;
@@ -35,7 +35,7 @@ ul {
 /* Header */
 .site-header {
     position: fixed;
-    background: #000;
+    background: #333;
     color: #FFF;
     width: 100%;
     padding: 20px 0;
@@ -47,7 +47,7 @@ ul {
 .site-footer {
     position: relative;
     border-top: 1px solid #EEE;
-    color: #999;
+    color: #333;
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
