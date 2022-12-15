@@ -1,104 +1,109 @@
 @extends('layout3')
-@section('menu')
-    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+@section('menu3')
+    <header class="site-header push">This is a header</header>
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left unfolded"
-                data-toggle="menubar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="hamburger-bar"></span>
-            </button>
-            <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
-                <i class="icon wb-more-horizontal" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search" data-toggle="collapse">
-                <span class="sr-only">Toggle Search</span>
-                <i class="icon wb-search" aria-hidden="true"></i>
-            </button>
-            <div class="navbar-brand navbar-brand-center">
-                <!--<img class="navbar-brand-logo" src="https://estacionamento.huufma.br/static/assets/images/logo_black.png" title="Serviço Residencial">-->
-                <span class="icon fa-car fa-3x"></span>
-                <span class="navbar-brand-text">SIS Estacionamento</span>
-            </div>
-        </div>
-
-        <div class="navbar-container container-fluid">
-            <!-- Navbar Collapse -->
-            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
-                <!-- Navbar Toolbar -->
-                <ul class="nav navbar-toolbar">
-                    <li class="hidden-float" id="toggleMenubar">
-                        <a data-toggle="menubar" href="#" role="button">
-                            <i class="icon hamburger hamburger-arrow-left unfolded">
-                                <span class="sr-only">Toggle menubar</span>
-                                <span class="hamburger-bar"></span>
-                            </i>
-                        </a>
-                    </li>
-                    <li class="hidden-xs" id="toggleFullscreen">
-                        <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
-                            <span class="sr-only">Toggle fullscreen</span>
-                        </a>
-                    </li>
-
-                </ul>
-                <!-- End Navbar Toolbar -->
-
-                <!-- Navbar Toolbar Right -->
-                <ul id="nav-toolbar-user" class="nav navbar-toolbar navbar-right navbar-toolbar-right hide">
-
-                    <li class="dropdown">
-                        <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
-                            data-animation="slide-bottom" role="button">
-                            <span class="avatar avatar-online">
-                                <img src="https://estacionamento.huufma.br/static/assets/images/user.png" alt="...">
-                                <i></i>
-                            </span>
-                            <label></label>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li role="presentation">
-                                <a href="https://estacionamento.huufma.br/login/sair" role="menuitem"><i
-                                        class="icon wb-power" aria-hidden="true"></i> Sair</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- End Navbar Toolbar Right -->
-            </div>
-            <!-- End Navbar Collapse -->
-
-            <!-- Site Navbar Seach -->
-            <div class="collapse navbar-search-overlap" id="site-navbar-search">
-                <form role="search">
-                    <div class="form-group">
-                        <div class="input-search">
-                            <i class="input-search-icon wb-search" aria-hidden="true"></i>
-                            <input type="text" class="form-control" name="site-search" placeholder="Search...">
-                            <button type="button" class="input-search-close icon wb-close"
-                                data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- End Site Navbar Seach -->
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link"><a href="#">Início</a></li>
+                <li class="pushy-submenu">
+                    <button>Pesquisar</button>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Admitidos</a></li>
+                        <li class="pushy-link"><a href="#">Altas</a></li>
+                        <li class="pushy-link"><a href="#">Internados</a></li>
+                        <li class="pushy-link"><a href="#">Lista de Espera</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>Estatisticas</button>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>Mapa Diário</button>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-link"><a href="#">Declaração</a></li>
+                <li class="pushy-link"><a href="#">Sair</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- menu lateral -->
-    <div class="site-menubar hide">
-        <div class="site-menubar-body">
-            <div>
-                <div>
-                    <ul class="site-menu">
-                        <li class="site-menu-category">Menu Principal</li>
-                        <li class="site-menu-item">
-                            <a href="https://estacionamento.huufma.br/cadastrar" data-slug="cad">
-                                <i class="site-menu-icon wb-add-file" aria-hidden="true"></i>
-                                <span class="site-menu-title">Cadastro</span>
-                            </a>
-                        </li>
-                </div>
-            </div>
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Your Content -->
+    <div id="container">
+        <!-- Menu Button -->
+        <button class="menu-btn">&#9776; Menu</button>
+
+        {{-- tela principal --}}
+        <div class="screen">
+            {{-- Iniciando Form Dropwdown --}}
+            <form action="#">
+                <fieldset class="fieldset">
+                    <legend>
+                        <fieldset id="field-legenda">Formulário de busca</fieldset>
+
+                    </legend>
+                    <div class="opcao">
+                        <label for="especialidade">Especialidade</label>
+                        <select name="especialidade" id="especialidade">
+                            <option value="Todas as especialidades">TODAS AS ESPECIALIDADES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="nome">Nome do médico</label>
+                        <select name="nome" id="nome">
+                            <option value="Todas as especialidades">TODOS OS MÉDICOS</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="unidade">Unidade</label>
+                        <select name="unidade" id="unidade">
+                            <option value="Todas as especialidades">TODAS AS UNIDADES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="andar">Andar</label>
+                        <select name="andar" id="andar">
+                            <option value="Todas as especialidades">TODOS OS ANDARES</option>
+                        </select>
+                    </div>
+                    <div class="opcao">
+                        <label for="ala">Ala</label>
+                        <select name="ala" id="ala">
+                            <option value="Todas as especialidades">TODAS AS ALAS</option>
+                        </select>
+                    </div>
+                    <fieldset class="field-data">
+                        <h2>Período</h2>
+                        <form>
+                            <label for="birthday">Data início:</label>
+                            <input type="date" id="birthday" name="birthday">
+                            <label for="birthday">Data fim:</label>
+                            <input type="date" id="birthday" name="birthday">
+                        </form>
+                    </fieldset>
+                </fieldset>
+            </form>
+            <input type="submit" value="Limpar" />
+            <input type="submit" value="Buscar" />
+            {{-- Fim Form Dropwdown --}}
+
         </div>
-    </div>
-@endsection
+
+        <footer class="site-footer push">This is a footer</footer>
+
+        <!-- Pushy JS -->
+        <script src="js/pushy.js"></script>
+    @endsection
